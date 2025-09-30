@@ -1,0 +1,279 @@
+    /* 전체 폰트 */
+    * {
+        font-family: 'NeoDunggeunmo Pro';
+    }
+
+    /* 전체 배경 */
+    body {
+        background: linear-gradient(90deg, #000 21px, transparent 1%) center,
+            linear-gradient(#000 21px, transparent 1%) center, #66626285;
+        background-size: 22px 22px;
+    }
+
+
+    /* 회전퐁크 1 박스 */
+    .phonk_box1 {
+        margin: 0px auto auto auto;
+        background-color: black;
+        height: 45px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 2px solid white
+    }
+
+    /* 회전퐁크 1 */
+    .phonk_box1 p {
+        text-shadow: 2px 1px blue;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        display: inline-block;
+        animation: text-to-right 20s linear infinite;
+    }
+
+    @keyframes text-to-right {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-70%);
+        }
+    }
+
+    /* 회전퐁크 2 */
+    .phonk_box2 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        height: 45px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+
+    /* 회전퐁크 2 박스 */
+    .phonk_box2 p {
+        text-shadow: 2px 1px blue;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        display: inline-block;
+        animation: text-to-left 20s linear infinite;
+    }
+
+    @keyframes text-to-left {
+        0% {
+            transform: translateX(-70%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    /* 인트로 컨테이너 */
+    .login_b {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    /* 인트로 버튼 */
+    .login_btn {
+        width: 300px;
+        height: 150px;
+        font-size: 50px;
+        text-align: center;
+        margin: 100px auto 0px auto;
+    }
+
+    /* 인트로 */
+    .login_comment {
+        color: white;
+        text-shadow: 3px 1px aqua, -3px -1px rgb(206, 0, 113);
+        height: 120px;
+        width: 1300px;
+        font-size: 90px;
+        text-align: center;
+        margin: 200px auto 0px auto;
+    }
+
+
+
+
+
+
+
+
+
+    /* 메인화면 숨기기 */
+    .hidden {
+        display: none;
+    }
+
+    .fade-out {
+        animation: fadeOut 1s forwards;
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s forwards;
+    }
+
+
+
+
+
+
+    /* 메인화면 등장 */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .main_box {
+        background-color: green;
+        margin: 50px auto 50px auto;
+        width: 1200px;
+        height: 100%;
+        background-color: #111;
+        border-color: #fff;
+        box-shadow: 0 0 0 5px #fff, 0 0 0 8px #111, 15px 16px 0 0 #fff;
+        color: #fff;
+        text-align: left;
+        padding: 12px;
+    }
+
+    .main_images {
+        width: 130px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px auto 40px 130px;
+        max-width: 180px;
+    }
+
+    .myphoto1 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
+
+    .myintroduce {
+        text-align: left;
+        font-size: 25px;
+        margin: 5px auto 30px auto;
+        width: 900px;
+    }
+
+    .myintroduce .label {
+        color: skyblue;
+
+        font-weight: bold;
+    }
+
+    .real_photo {
+        background-color: green;
+        margin: 50px auto 50px auto;
+        width: 1200px;
+        height: 100%;
+        background-color: #111;
+        border-color: #fff;
+        box-shadow: 0 0 0 5px #fff, 0 0 0 8px #111, 15px 16px 0 0 #fff;
+        color: #fff;
+        text-align: left;
+        padding: 12px;
+    }
+
+
+    .r_photo_box1 {
+        width: 500px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px auto 40px 130px;
+    }
+    .real_photo1 {
+        width: 100%;
+        height: 100%;
+        image-rendering: auto;
+        object-fit: contain;
+    }
+
+    .r_photo_box2 {
+        width: 500px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px 130px 40px auto;
+    }
+    .real_photo2 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
+
+    .r_photo_box3 {
+        width: 567px;
+        height: 756px;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px auto 40px 130px;
+    }
+    .eal_photo3 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
+
+
+    .r_photo_box4 {
+        width: 500px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px 130px 63px auto;
+    }
+    .real_photo4 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
