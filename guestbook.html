@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>방명록</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/neodgm/neodgm-pro-webfont@1.020/neodgm_pro/style.css">
-    <link rel="stylesheet" href="./guestbook.css"> <!--.css파일이랑 연동-->
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/neodgm/neodgm-pro-webfont@1.020/neodgm_pro/style.css"
+    />
+    <link rel="stylesheet" href="./css/guestbook.css" />
+    <!--.css파일이랑 연동-->
+  </head>
 
-<body>
+  <body>
     <div class="container mt-4">
+      <!-- 방명록 버튼 -->
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="pageName">방명록</span>
+        <button type="button" class="btn btn-outline-light">메인 페이지</button>
+      </div>
 
-        <!-- 방명록 버튼 -->
-        <div class="d-flex justify-content-between align-items-center mb-3">
-            <span class="pageName">방명록</span>
-            <button type="button" class="btn btn-outline-light">메인 페이지</button>
+      <!-- 입력폼 카드 -->
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">이름 입력</label>
+            <input type="text" class="form-control" id="nameInput" />
+          </div>
+          <div class="mb-3">
+            <label for="contentInput" class="form-label">내용 입력</label>
+            <textarea
+              class="form-control contentArea"
+              id="contentInput"
+              rows="3"
+            ></textarea>
+          </div>
+          <button type="button" class="btn btn-outline-light">등록하기</button>
         </div>
+      </div>
 
-        <!-- 입력폼 카드 -->
-        <div class="card mb-4">
-            <div class="card-body">
-                <div class="mb-3">
-                    <label for="nameInput" class="form-label">이름 입력</label>
-                    <input type="text" class="form-control" id="nameInput">
-                </div>
-                <div class="mb-3">
-                    <label for="contentInput" class="form-label">내용 입력</label>
-                    <textarea class="form-control contentArea" id="contentInput" rows="3"></textarea>
-                </div>
-                <button type="button" class="btn btn-outline-light">등록하기</button>
-            </div>
-        </div>
-
-        <!-- 방문자 리스트 -->
-        <div class="card">
-            <div class="card-header">
-                방문 리스트
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item d-flex justify-content-between">
-                    <span>방문자 이름</span>
-                    <span>내용</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                    <span>방문자 이름</span>
-                    <span>내용</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                    <span>방문자 이름</span>
-                    <span>내용</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                    <span>방문자 이름</span>
-                    <span>내용</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between">
-                    <span>방문자 이름</span>
-                    <span>내용</span>
-                </li>
-            </ul>
-        </div>
+      <!-- 방문자 리스트 -->
+      <div class="card">
+        <div class="card-header">방문 리스트</div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>방문자 이름</span>
+            <span>내용</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>방문자 이름</span>
+            <span>내용</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>방문자 이름</span>
+            <span>내용</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>방문자 이름</span>
+            <span>내용</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>방문자 이름</span>
+            <span>내용</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
