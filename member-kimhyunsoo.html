@@ -19,14 +19,14 @@
         const mainScreen = document.getElementById("main_screen");
 
         introBtn.addEventListener("click", function () {
-            
+
 
             introScreen.classList.add("fade-out");
 
             introScreen.addEventListener("animationend", function () {
                 introScreen.style.display = "none";
                 mainScreen.classList.remove("hidden");
-                mainScreen.classList.add("fade-in");
+                mainScreen.classList.add("fadeInTopLeft");
             }, { once: true });
         });
     });
@@ -72,46 +72,47 @@
 
     <!-- 메인 화면 -->
     <div id="main_screen" class="hidden">
+        <div class="go_to_main">
+            <a href="index.html" class="detail-btn main_btn">메인 페이지로</a>
+        </div>
         <div class="main_box">
-            <div class="main_images">
-                <img class="myphoto1" src="images/member-kimhyunsoo.png" alt="김현수" />
+                <div class="main_images">
+                    <img class="myphoto1" src="images/member-kimhyunsoo.png" alt="김현수" />
+                </div>
+                <div class="myintroduce">
+                    <p><span class="label">이름</span> : 김현수</p>
+                    <p><span class="label">나이</span> : 24살</p>
+                    <p><span class="label">성별</span> : 남자</p>
+                    <p><span class="label">MBTI</span> : ENTP</p>
+                    <p><span class="label">지역</span> : 경기도 부천</p>
+                    <p><span class="label">특징</span> :</p>
+                    <p> 저는 말이 참 많습니다. 주변 사람들을 재밌게 해주고 싶어요. 털털하게 웃습니다. 그게 기분을 좋게 해주거든요. 전 노래도 좀 합니다. 보컬 랩 가릴 것 없이요. 강아지를
+                        좋아합니다. 고양이는 별로입니다. 왜냐하면 제가 어릴 때 비 맞고 있던 고양이가 너무 가여워 집에 있는 참치캔을 줬던 적이 있는데 고양이가 참치캔 먹고 있을 때 만져보려고
+                        했다가 손가락 물리고 참치캔만 뜯겼던 적이 있기 때문입니다. 그 때부터 일까요? 저는 말이 참 많습니다. 강아지를 좋아하는 이유는 너무 단순합니다. 강아지는 항상 절 보면
+                        웃어주기 때문입니다. 물론 저는 강아지를 키우지 않습니다. 제가 음악 만드는 것을 좋아하고 응원 해주던 친구들은 최근 들어 제가 왜 개발자가 되고 싶어하는지 물어보곤
+                        합니다. 그 이유는 방금 이메일로 보냈으니까 확인 해봐 이건 너만 알고 있어라. 제 첫 인상을 보면 보통 좋은 성격을 보유하지 않았다고 오해하시는 분들도 계십니다. 그렇지만
+                        저는 알앤비 소울을 참 좋아합니다. 한국에선 브라운 아이드 소울이 가장 좋습니다. 며칠 전 6년만에 복귀한 브라운 아이드 소울의 노래를 들어보셨나요? 저는 게임도 못하지
+                        않습니다. 썩 좋아하진 않구요. 내일배움캠프라는 좋은 기회를 얻게 되었다고 생각하고 그걸 함께하는 여러분들께 감사함과 응원의 말 전합니다. 전 누구와도 좋게 좋게 지내는
+                        것을 좋아합니다. 좋은게 좋다는 뜻. 많은 관심 부탁 드립니다. </p>
+                </div>
             </div>
-            <div class="myintroduce">
-                <p><span class="label">이름</span> : 김현수</p>
-                <p><span class="label">나이</span> : 24살</p>
-                <p><span class="label">성별</span> : 남자</p>
-                <p><span class="label">MBTI</span> : ENTP</p>
-                <p><span class="label">지역</span> : 경기도 부천</p>
-                <p><span class="label">전화</span> : 없어요</p>
-                <p><span class="label">인스타</span> : 안 알려줘요 😜</p>
-                <p><span class="label">특징</span> :</p>
-                <p> 저는 말이 참 많습니다. 주변 사람들을 재밌게 해주고 싶어요. 털털하게 웃습니다. 그게 기분을 좋게 해주거든요. 전 노래도 좀 합니다. 보컬 랩 가릴 것 없이요. 강아지를
-                    좋아합니다. 고양이는 별로입니다. 왜냐하면 제가 어릴 때 비 맞고 있던 고양이가 너무 가여워 집에 있는 참치캔을 줬던 적이 있는데 고양이가 참치캔 먹고 있을 때 만져보려고
-                    했다가 손가락 물리고 참치캔만 뜯겼던 적이 있기 때문입니다. 그 때부터 일까요? 저는 말이 참 많습니다. 강아지를 좋아하는 이유는 너무 단순합니다. 강아지는 항상 절 보면
-                    웃어주기 때문입니다. 물론 저는 강아지를 키우지 않습니다. 제가 음악 만드는 것을 좋아하고 응원 해주던 친구들은 최근 들어 제가 왜 개발자가 되고 싶어하는지 물어보곤
-                    합니다. 그 이유는 방금 이메일로 보냈으니까 확인 해봐 이건 너만 알고 있어라. 제 첫 인상을 보면 보통 좋은 성격을 보유하지 않았다고 오해하시는 분들도 계십니다. 그렇지만
-                    저는 알앤비 소울을 참 좋아합니다. 한국에선 브라운 아이드 소울이 가장 좋습니다. 며칠 전 6년만에 복귀한 브라운 아이드 소울의 노래를 들어보셨나요? 저는 게임도 못하지
-                    않습니다. 썩 좋아하진 않구요. 내일배움캠프라는 좋은 기회를 얻게 되었다고 생각하고 그걸 함께하는 여러분들께 감사함과 응원의 말 전합니다. 전 누구와도 좋게 좋게 지내는
-                    것을 좋아합니다. 좋은게 좋다는 뜻. 많은 관심 부탁 드립니다. </p>
-            </div>
-        </div>
 
-        <div class="real_photo">
-            <div class="r_photo_box1">
-                <img class="real_photo1" src="images/hyunsoo1.jpg" alt="김현수" />
+            <div class="real_photo">
+                <div class="r_photo_box1">
+                    <img class="real_photo1" src="images/hyunsoo1.jpg" alt="김현수" />
+                </div>
+                <div class="r_photo_box2">
+                    <img class="real_photo2" src="images/hyunsoo2.jpg" alt="김현수" />
+                </div>
+                <div class="r_photo_box3">
+                    <img class="real_photo3" src="images/hyunsoo3.jpg" alt="김현수" />
+                </div>
+                <div class="r_photo_box4">
+                    <img class="real_photo4" src="images/hyunsoo4.jpg" alt="김현수" />
+                </div>
             </div>
-            <div class="r_photo_box2">
-                <img class="real_photo2" src="images/hyunsoo2.jpg" alt="김현수" />
-            </div>
-            <div class="r_photo_box3">
-                <img class="real_photo3" src="images/hyunsoo3.jpg" alt="김현수" />
-            </div>
-            <div class="r_photo_box4">
-                <img class="real_photo4" src="images/hyunsoo4.jpg" alt="김현수" />
-            </div>
-        </div>
 
-    </div>
+        </div>
 
     </div>
 </body>
