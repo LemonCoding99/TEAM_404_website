@@ -1,0 +1,77 @@
+ * {
+     font-family: 'NeoDunggeunmo Pro';
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ body {
+     margin-top: 40px;
+ }
+
+ .container {
+     max-width: 1000px;
+ }
+
+ body {
+     background: linear-gradient(90deg, #000 21px, transparent 1%) center,
+         linear-gradient(#000 21px, transparent 1%) center, #66626285;
+     background-size: 22px 22px;
+ }
+
+ .btn {
+     box-shadow: 0 0 0 1px #fff, 0 0 0 5px #111, 5px 5px 0 0 #fff;
+ }
+
+ .btn:hover {
+     filter: brightness(1.1);
+ }
+
+ .card {
+     background-color: #111;
+     border-color: #fff;
+     box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
+     color: #fff;
+ }
+
+ .form-control {
+     background-color: #111;
+     color: #fff;
+     border-color: #fff;
+ }
+
+ .form-control:focus {
+     background-color: #111;
+     color: #fff;
+     border-color: #fff;
+     outline: none;
+     box-shadow: none;
+     border-color: inherit;
+ }
+
+ .contentArea {
+     height: 300px;
+     resize: none;
+     color: #fff;
+ }
+
+ .text-center button {
+     width: 500px;
+ }
+
+ .list-group {
+     height: 200px;
+ }
+
+ .list-group li {
+     background-color: #111;
+     color: #fff;
+ }
+
+ .card-header {
+     border-bottom: 3px solid #fff;
+ }
+
+ .pageName {
+     color: #fff;
+     font-size: 30px;
+ }
