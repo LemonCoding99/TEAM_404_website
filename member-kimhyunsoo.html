@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEAM 404 | 메인페이지</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" /> <!-- Neo둥근모 Pro -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/neodgm/neodgm-pro-webfont@1.020/neodgm_pro/style.css">
+
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const introBtn = document.getElementById("intro_btn");
+        const introScreen = document.getElementById("intro_screen");
+        const mainScreen = document.getElementById("main_screen");
+
+        introBtn.addEventListener("click", function () {
+            alert("🎉 BOOM 🎉");
+
+            introScreen.classList.add("fade-out");
+
+            introScreen.addEventListener("animationend", function () {
+                introScreen.style.display = "none";
+                mainScreen.classList.remove("hidden");
+                mainScreen.classList.add("fade-in");
+            }, { once: true });
+        });
+    });
+</script>
+
+
+<style>
+    /* 전체 폰트 */
+    * {
+        font-family: 'NeoDunggeunmo Pro';
+    }
+
+    /* 전체 배경 */
+    body {
+        background: linear-gradient(90deg, #000 21px, transparent 1%) center,
+            linear-gradient(#000 21px, transparent 1%) center, #66626285;
+        background-size: 22px 22px;
+    }
+
+
+
+
+
+
+    /* 회전퐁크 1 박스 */
+    .phonk_box1 {
+        margin: 0px auto auto auto;
+        background-color: black;
+        height: 45px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 2px solid white
+    }
+
+    /* 회전퐁크 1 */
+    .phonk_box1 p {
+        text-shadow: 2px 1px blue;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        display: inline-block;
+        animation: text-to-right 20s linear infinite;
+    }
+
+    @keyframes text-to-right {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-70%);
+        }
+    }
+
+    /* 회전퐁크 2 */
+    .phonk_box2 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        height: 45px;
+        white-space: nowrap;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 2px solid white;
+    }
+
+    /* 회전퐁크 2 박스 */
+    .phonk_box2 p {
+        text-shadow: 2px 1px blue;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        display: inline-block;
+        animation: text-to-left 20s linear infinite;
+    }
+
+    @keyframes text-to-left {
+        0% {
+            transform: translateX(-70%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+    /* 인트로 컨테이너 */
+    .login_b {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    /* 인트로 버튼 */
+    .login_btn {
+        width: 300px;
+        height: 150px;
+        font-size: 50px;
+        text-align: center;
+        margin: 100px auto 0px auto;
+    }
+
+    /* 인트로 */
+    .login_comment {
+        color: white;
+        text-shadow: 3px 1px aqua, -3px -1px rgb(206, 0, 113);
+        height: 120px;
+        width: 1300px;
+        font-size: 90px;
+        text-align: center;
+        margin: 200px auto 0px auto;
+    }
+
+
+
+
+
+
+
+
+
+    /* 메인화면 숨기기 */
+    .hidden {
+        display: none;
+    }
+
+    .fade-out {
+        animation: fadeOut 1s forwards;
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .fade-in {
+        animation: fadeIn 1s forwards;
+    }
+
+
+
+
+
+
+    /* 메인화면 등장 */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .main_box {
+        background-color: green;
+        margin: 50px auto 50px auto;
+        width: 1200px;
+        height: 100%;
+        background-color: #111;
+        border-color: #fff;
+        box-shadow: 0 0 0 5px #fff, 0 0 0 8px #111, 15px 16px 0 0 #fff;
+        color: #fff;
+        text-align: left;
+        padding: 12px;
+    }
+
+    .main_images {
+        width: 130px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px auto 40px 130px;
+        max-width: 180px;
+    }
+
+    .myphoto1 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
+
+    .myintroduce {
+        text-align: left;
+        font-size: 25px;
+        margin: 5px auto 30px auto;
+        width: 900px;
+    }
+
+    .myintroduce .label {
+        color: skyblue;
+
+        font-weight: bold;
+    }
+
+    .real_photo {
+        background-color: green;
+        margin: 50px auto 50px auto;
+        width: 1200px;
+        height: 100%;
+        background-color: #111;
+        border-color: #fff;
+        box-shadow: 0 0 0 5px #fff, 0 0 0 8px #111, 15px 16px 0 0 #fff;
+        color: #fff;
+        text-align: left;
+        padding: 12px;
+    }
+
+
+    .r_photo_box1 {
+        width: 500px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px auto 40px 130px;
+    }
+    .real_photo1 {
+        width: 100%;
+        height: 100%;
+        image-rendering: auto;
+        object-fit: contain;
+    }
+
+    .r_photo_box2 {
+        width: 500px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px 130px 40px auto;
+    }
+    .real_photo2 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
+
+    .r_photo_box3 {
+        width: 567px;
+        height: 756px;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px auto 40px 130px;
+    }
+    .eal_photo3 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
+
+
+    .r_photo_box4 {
+        width: 500px;
+        aspect-ratio: 1 / 1;
+        background-color: transparent;
+        border: 2px solid #ccc;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin: 63px 130px 63px auto;
+    }
+    .real_photo4 {
+        width: 100%;
+        height: 100%;
+        image-rendering: pixelated;
+        object-fit: contain;
+    }
+</style>
+
+<body>
+    <!-- 인트로 화면 -->
+    <div id="intro_screen">
+        <div class="phonk_box1">
+            <p>☠️ 나 페스타 두 핌지 세마나 소 홀레 봉 ☠️ 엘라 셰가 이젠카나 콤 우 파수 벵 소 파수 벵 소 (보-보-바소 베니 소) 파수 벵 소 (보-보-바소 베니 소) 나 페스타 두 핌
+                지 세마나
+                ☠️, -마나 🎷, -마나 📯, -마나 🎸 지 세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나, -마나
+                🎷, -마나
+                📯, -마나 🎸, 지 세마나 나 페스타 두 핌지 세마나 소 홀레 봉 ☠️ 엘라 셰가 이젠카나 콤 우 파수 벵 소 파수 벵 소 (보-보-바소 베니 소) 파수 벵 소 (보-보-바소
+                베니 소) 나
+                페스타 두 핌 지 세마나 ☠️, -마나 🎷, -마나 📯, -마나 🎸 지 세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나, -마나 🎷, -마나 📯, -마나
+                🎸, 지
+                세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나</p>
+        </div>
+        <div class="login_c">
+            <p class="login_comment">김현수가 누군지 아는 사람 : ☠️</p>
+
+        </div>
+        <div class="login_b">
+            <button id="intro_btn" type="button" class="btn btn-outline-danger login_btn">Danger</button>
+        </div>
+        <div class="phonk_box2">
+            <p>☠️ 나 페스타 두 핌지 세마나 소 홀레 봉 ☠️ 엘라 셰가 이젠카나 콤 우 파수 벵 소 파수 벵 소 (보-보-바소 베니 소) 파수 벵 소 (보-보-바소 베니 소) 나 페스타 두 핌
+                지
+                세마나
+                ☠️, -마나 🎷, -마나 📯, -마나 🎸 지 세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나, -마나
+                🎷,
+                -마나
+                📯, -마나 🎸, 지 세마나 나 페스타 두 핌지 세마나 소 홀레 봉 ☠️ 엘라 셰가 이젠카나 콤 우 파수 벵 소 파수 벵 소 (보-보-바소 베니 소) 파수 벵 소 (보-보-바소
+                베니
+                소) 나
+                페스타 두 핌 지 세마나 ☠️, -마나 🎷, -마나 📯, -마나 🎸 지 세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나, -마나 🎷, -마나 📯, -마나
+                🎸, 지
+                세마나, -마나 🎷, -마나 📯, -마나 🎸, 지 세마나</p>
+        </div>
+    </div>
+
+    <!-- 메인 화면 -->
+    <div id="main_screen" class="hidden">
+        <div class="main_box">
+            <div class="main_images">
+                <img class="myphoto1" src="images/member-kimhyunsoo.png" alt="김현수" />
+            </div>
+            <div class="myintroduce">
+                <p><span class="label">이름</span> : 김현수</p>
+                <p><span class="label">나이</span> : 24살</p>
+                <p><span class="label">성별</span> : 남자</p>
+                <p><span class="label">MBTI</span> : ENTP</p>
+                <p><span class="label">지역</span> : 경기도 부천</p>
+                <p><span class="label">전화</span> : 없어요</p>
+                <p><span class="label">인스타</span> : 안 알려줘요 😜</p>
+                <p><span class="label">특징</span> :</p>
+                <p> 저는 말이 참 많습니다. 주변 사람들을 재밌게 해주고 싶어요. 털털하게 웃습니다. 그게 기분을 좋게 해주거든요. 전 노래도 좀 합니다. 보컬 랩 가릴 것 없이요. 강아지를
+                    좋아합니다. 고양이는 별로입니다. 왜냐하면 제가 어릴 때 비 맞고 있던 고양이가 너무 가여워 집에 있는 참치캔을 줬던 적이 있는데 고양이가 참치캔 먹고 있을 때 만져보려고
+                    했다가 손가락 물리고 참치캔만 뜯겼던 적이 있기 때문입니다. 그 때부터 일까요? 저는 말이 참 많습니다. 강아지를 좋아하는 이유는 너무 단순합니다. 강아지는 항상 절 보면
+                    웃어주기 때문입니다. 물론 저는 강아지를 키우지 않습니다. 제가 음악 만드는 것을 좋아하고 응원 해주던 친구들은 최근 들어 제가 왜 개발자가 되고 싶어하는지 물어보곤
+                    합니다. 그 이유는 방금 이메일로 보냈으니까 확인 해봐 이건 너만 알고 있어라. 제 첫 인상을 보면 보통 좋은 성격을 보유하지 않았다고 오해하시는 분들도 계십니다. 그렇지만
+                    저는 알앤비 소울을 참 좋아합니다. 한국에선 브라운 아이드 소울이 가장 좋습니다. 며칠 전 6년만에 복귀한 브라운 아이드 소울의 노래를 들어보셨나요? 저는 게임도 못하지
+                    않습니다. 썩 좋아하진 않구요. 내일배움캠프라는 좋은 기회를 얻게 되었다고 생각하고 그걸 함께하는 여러분들께 감사함과 응원의 말 전합니다. 전 누구와도 좋게 좋게 지내는
+                    것을 좋아합니다. 좋은게 좋다는 뜻. 많은 관심 부탁 드립니다. </p>
+            </div>
+        </div>
+
+        <div class="real_photo">
+            <div class="r_photo_box1">
+                <img class="real_photo1" src="images/hyunsoo1.jpg" alt="김현수" />
+            </div>
+            <div class="r_photo_box2">
+                <img class="real_photo2" src="images/hyunsoo2.jpg" alt="김현수" />
+            </div>
+            <div class="r_photo_box3">
+                <img class="real_photo3" src="images/hyunsoo3.jpg" alt="김현수" />
+            </div>
+            <div class="r_photo_box4">
+                <img class="real_photo4" src="images/hyunsoo4.jpg" alt="김현수" />
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+</body>
+
+</html>
