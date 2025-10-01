@@ -43,28 +43,6 @@
         <div class="card">
             <div class="card-header">방문 리스트</div>
             <ul id="list" class="list-group list-group-flush"> <!-- 20251001_김동욱 id부여 -->
-
-                <!-- 20251001_김동욱 리스트 골자 주석처리 -->
-                <!-- <li class="list-group-item d-flex justify-content-between">
-          <span>방문자 이름</span>
-          <span>내용</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>방문자 이름</span>
-          <span>내용</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>방문자 이름</span>
-          <span>내용</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>방문자 이름</span>
-          <span>내용</span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between">
-          <span>방문자 이름</span>
-          <span>내용</span>
-        </li> -->
             </ul>
         </div>
     </div>
@@ -83,7 +61,6 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
         import { getFirestore, collection, addDoc, getDocs }
             from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-        //   import { getAnalytics } from "firebase/analytics";
 
         // Firebase Config
         const firebaseConfig = {
@@ -114,7 +91,7 @@
             await addDoc(collection(db, "comments"), doc);
 
             // 기존 : window.location.reload(); → 불필요하게 전체 새로고침
-            // ✅ 개선 : 새 글만 리스트에 추가
+            // 개선 : 새 글만 리스트에 추가
             let temp_html = `
         <li class="list-group-item d-flex justify-content-between">
           <span>${name}</span>
@@ -161,6 +138,7 @@
     <!-- JS 연동 -->
     <!-- <script type="module" src="./guestbook.js"></script>  -->
     <!-- guestbook.js를 HTML에서 일반 <script>로 불러오면 import 구문을 인식하지 못해서 관련 함수가 회색/불투명하게 표시됨, 그래서 type=module을 먹임 -->
+    <!-- 각종 오류로 인해 html-JS 분리 포기 2025.10.01 -->
 
 </body>
 
