@@ -1,103 +1,103 @@
    * {
-      font-family: 'NeoDunggeunmo Pro';
-      font-weight: 400;
-      font-style: normal;
-    }
+     font-family: 'NeoDunggeunmo Pro';
+     font-weight: 400;
+     font-style: normal;
+   }
 
+   .container {
+     max-width: 1000px;
+   }
 
-    .container {
-      max-width: 1000px;
-    }
+   body {
+     background: linear-gradient(90deg, #000 21px, transparent 1%) center,
+       linear-gradient(#000 21px, transparent 1%) center, #66626285;
+     background-size: 22px 22px;
+     margin-top: 80px;
 
-    body {
-      background: linear-gradient(90deg, #000 21px, transparent 1%) center,
-        linear-gradient(#000 21px, transparent 1%) center, #66626285;
-      background-size: 22px 22px;
-      margin-top: 80px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+   .mainArea {
+     background: linear-gradient(90deg, #000 21px, transparent 1%) center,
+       linear-gradient(#000 21px, transparent 1%) center, #66626285;
+     background-size: 22px 22px;
 
-    .mainArea {
-      background: linear-gradient(90deg, #000 21px, transparent 1%) center,
-        linear-gradient(#000 21px, transparent 1%) center, #66626285;
-      background-size: 22px 22px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+   .card {
+     background-color: #111;
+     border-color: #fff;
+     box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
+     color: #fff;
+     width: 1000px;
+     height: 600px;
+     padding-left: 100px;
+     padding-top: 100px;
+   }
 
-    .card {
-      background-color: #111;
-      border-color: #fff;
-      box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
-      color: #fff;
-      width: 1000px;
-      height: 600px;
-      padding-left: 100px;
-      padding-top: 100px;
-    }
+   .card-title {
+     font-weight: bolder;
+   }
 
-    .card-title {
-      font-weight: bolder;
-    }
+   .aboutme-table td {
+     border: none;
+     padding: 6px 12px;
+   }
 
-    .aboutme-table td {
-      border: none;
-      padding: 6px 12px;
-    }
+   .aboutme-table td:first-child {
+     font-weight: bold;
+     padding-right: 20px;
+   }
 
-    .aboutme-table td:first-child {
-      font-weight: bold;
-      padding-right: 20px;
-    }
+   .pageName {
+     color: #fff;
+     font-size: 30px;
+   }
 
-    .pageName {
-      color: #fff;
-      font-size: 30px;
-    }
+   .btn {
+     box-shadow: 0 0 0 1px #fff, 0 0 0 5px #111, 5px 5px 0 0 #fff;
+   }
 
-    .btn {
-      box-shadow: 0 0 0 1px #fff, 0 0 0 5px #111, 5px 5px 0 0 #fff;
-    }
+   .btn:hover {
+     filter: brightness(1.1);
+   }
 
-    .btn:hover {
-      filter: brightness(1.1);
-    }
+   .myPic {
+     box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
+   }
 
-    .myPic {
-      box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
-    }
+   .col-md-8 {
+     padding-left: 30px;
+   }
 
-    .col-md-8 {
-      padding-left: 30px;
-    }
+   a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 30px;
+   }
 
-    a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 30px;
-    }
+   a:hover {
+     color: #fff;
+   }
 
-    a:hover {
-      color: #fff;
-    }
+   .link-table td {
+     border: none;
+     font-weight: bold;
+     padding-right: 20px;
+   }
 
-    .link-table td {
-      border: none;
-    }
+   #image_id {
+     height: 386px;
+     width: 300px;
+   }
 
-    .link-table td:first-child {
-      font-weight: bold;
-      padding-right: 20px;
-    }
-
-    #image_id {
-      height: 386px;
-      width: 300px;
-    }
+   .mailInput{
+    font-size: 25px;
+   }
