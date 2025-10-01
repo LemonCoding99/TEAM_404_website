@@ -219,6 +219,24 @@
         font-weight: bold;
     }
 
+    .btn_velog, .btn_github {
+        color: rgb(40, 49, 56);
+        text-decoration: none;
+    }
+
+    .btn_velog:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+
+    .btn_github:hover {
+        color: gray;
+        text-decoration: underline;
+    }
+
+
+
+
     .real_photo {
         background-color: green;
         margin: 50px auto 50px auto;
@@ -277,7 +295,7 @@
         justify-content: left;
         margin: 63px auto 40px 130px;
     }
-    .eal_photo3 {
+    .real_photo3 {
         width: 100%;
         height: 100%;
         image-rendering: pixelated;
