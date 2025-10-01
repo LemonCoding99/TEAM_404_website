@@ -58,6 +58,16 @@
         .pet-img {
             max-height: 250px;
             object-fit: cover;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .card {
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .mt-5 {
@@ -67,6 +77,10 @@
             border-color: #fff;
             box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
             color: #fff;
+        }
+
+        .intro-section {
+            margin-top: 30px;
         }
 
         .socials {
