@@ -1,79 +1,80 @@
- * {
-     font-family: 'NeoDunggeunmo Pro';
-     font-weight: 400;
-     font-style: normal;
- }
+* {
+  font-family: "NeoDunggeunmo Pro";
+  font-weight: 400;
+  font-style: normal;
+}
 
- body {
-     margin-top: 40px;
- }
+body {
+  margin-top: 40px;
+}
 
- .container {
-     max-width: 1000px;
- }
+.container {
+  max-width: 1000px;
+}
 
- body {
-     background: linear-gradient(90deg, #000 21px, transparent 1%) center,
-         linear-gradient(#000 21px, transparent 1%) center, #66626285;
-     background-size: 22px 22px;
- }
+body {
+  background: linear-gradient(90deg, #000 21px, transparent 1%) center,
+    linear-gradient(#000 21px, transparent 1%) center, #66626285;
+  background-size: 22px 22px;
+}
 
- .btn {
-     box-shadow: 0 0 0 1px #fff, 0 0 0 5px #111, 5px 5px 0 0 #fff;
- }
+.btn {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 5px #111, 5px 5px 0 0 #fff;
+}
 
- .btn:hover {
-     filter: brightness(1.1);
- }
+.btn:hover {
+  filter: brightness(1.1);
+}
 
- .card {
-     background-color: #111;
-     border-color: #fff;
-     box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
-     color: #fff;
- }
+.card {
+  background-color: #111;
+  border-color: #fff;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 6px #111, 8px 8px 0 0 #fff;
+  color: #fff;
+  margin-bottom: 30px;
+}
 
- .form-control {
-     background-color: #111;
-     color: #fff;
-     border-color: #fff;
- }
+.form-control {
+  background-color: #111;
+  color: #fff;
+  border-color: #fff;
+}
 
- .form-control:focus {
-     background-color: #111;
-     color: #fff;
-     border-color: #fff;
-     outline: none;
-     box-shadow: none;
-     border-color: inherit;
- }
+.form-control:focus {
+  background-color: #111;
+  color: #fff;
+  border-color: #fff;
+  outline: none;
+  box-shadow: none;
+  border-color: inherit;
+}
 
- .contentArea {
-     height: 300px;
-     resize: none;
-     color: #fff;
- }
+.contentArea {
+  height: 300px;
+  resize: none;
+  color: #fff;
+}
 
- .text-center button {
-     width: 500px;
- }
+.text-center button {
+  width: 500px;
+}
 
- .list-group {
-     height: 200px;
-     overflow-y: auto;     /* 20251002_0918_세로 스크롤 생성 */
-     overflow-x: hidden;   /* 20251002_0918_가로 스크롤 방지 (선택사항) */
- }
+.list-group {
+  height: 200px;
+  overflow-y: auto; /* 20251002_0918_세로 스크롤 생성 */
+  overflow-x: hidden; /* 20251002_0918_가로 스크롤 방지 (선택사항) */
+}
 
- .list-group li {
-     background-color: #111;
-     color: #fff;
- }
+.list-group li {
+  background-color: #111;
+  color: #fff;
+}
 
- .card-header {
-     border-bottom: 3px solid #fff;
- }
+.card-header {
+  border-bottom: 3px solid #fff;
+}
 
- .pageName {
-     color: #fff;
-     font-size: 30px;
- }
+.pageName {
+  color: #fff;
+  font-size: 30px;
+}
