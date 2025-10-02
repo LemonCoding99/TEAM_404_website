@@ -60,7 +60,7 @@
     <script type="module">
         // Firebase SDK 라이브러리 가져오기 (CDN 방식)
         import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-        import { getFirestore, collection, addDoc, getDocs }
+        import { getFirestore, collection, addDoc, getDocs, query, orderBy } //20251002_0932-query, orderBy 추가 (리스트 정렬 목적)
             from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
 
         // Firebase Config
@@ -88,7 +88,8 @@
                 return;
             }
 
-            let doc = { 'name': name, 'content': content };
+            let doc = { 'name': name, 'content': content,
+            'createdAt': new Date() }; // 20251002_0923_김동욱-timestamp추가
             await addDoc(collection(db, "comments"), doc);
 
             // 기존 : window.location.reload(); → 불필요하게 전체 새로고침
@@ -109,7 +110,9 @@
 
         // Firestore에서 데이터 불러오기
         async function loadComments() {
-            let docs = await getDocs(collection(db, "comments"));
+            const q = query(collection(db, "comments"), orderBy("createdAt", "desc"));
+            let docs = await getDocs(q);
+
             docs.forEach((doc) => {
                 let row = doc.data();
                 let name = row['name'];
